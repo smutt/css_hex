@@ -1,0 +1,80 @@
+body {
+    background-color:#000000; 
+}
+
+#menu{
+  background: #000000;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  width: 250px;
+  color: green;
+  align-text: left;
+  z-index: 5;
+}
+
+#board-container {
+    position: absolute;
+    left: 300px;
+    top: 20px;
+}
+
+#board {
+    border: solid green 3px;
+    width: 2000px;
+    height: 800px;
+}
+
+.row {
+    float: left;
+    width: 2000px;  /* This has to be .hex width * # of cols */
+}
+
+.offset {
+    position: relative;
+    left: 44px;  /* half of the hex width. */
+}
+
+.hex {
+    /* The width and height depend on the size of the hex image. */
+    width: 88px;
+    height: 66px;
+    border: none;
+    float: left;
+}
+
+.tile {
+    width: 88px;
+    height: 88px;
+}
+
+/* Elements for the baby board */
+
+#baby-board{
+/*    border: solid green 3px; */
+    width: 225px;
+    height: 80px;
+}
+
+.baby-row{
+    float: left;
+    width: 220px;  /* This has to be .hex width * # of cols */
+}
+
+.baby-offset{
+    position: relative;
+    left: 5px;  /* half of the hex width. */
+}
+
+.baby-hex{
+    /* The width and height depend on the size of the hex image. */
+    width: 11px;
+    height: 7px;
+    border: none;
+    float: left;
+}
+
+.baby-tile{
+    width: 11px;
+    height: 11px;
+}
